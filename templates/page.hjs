@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/jquery.cleditor.css" />
+        <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.min.css">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>        
+        <script type="text/javascript" src="js/jquery.cleditor.min.js"></script>
+        <script type="text/javascript" src="js/jquery.history.js"></script>
+        <link rel="stylesheet" href="/stylesheets/mono-blue.css">
+        <script src="js/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+	</head>
+	<body>        
+		<div class="container">           
+            <div class="header">
+                <div class="header-content">
+                    <ul class="menu-main">
+                        <li id="all-kata" class="menu-main_item"><a class="menu-main_item_link j-menu active" data-type="task" href="type-task"><i class="fa fa-code"></i><span class="link_wrap">Задачки</span></a></li>
+                        <li id="all-article" class="menu-main_item"><a class="menu-main_item_link j-menu" data-type="blog" href="type-blog"><i class="fa fa-pencil"></i><span class="link_wrap">Заметки</span></a></li>                 
+                    </ul>                
+                </div>
+            </div>
+            <div class="column-left">                
+                <ul class="b-tags">
+                    <p class="zag2">Теги</p>
+                    {{{tagsList}}}
+                </ul>
+
+                <ul class="b-article-menu j-articles">
+                    <p class="zag2">{{{MenuTitle}}}</p>
+                    {{{MenuArticles}}}
+                </ul>
+            </div>
+
+            <div class="inner">
+                {{{cont}}}
+            </div>     
+		</div>
+        <div class="footer">
+            <div class="footer-content">
+                <nav>
+                    <a href="/about">about</a>
+                    <a href="/">github</a>
+                </nav>
+            </div>
+        </div>        
+	</body>
+</html>

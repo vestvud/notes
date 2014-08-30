@@ -1,0 +1,19 @@
+{
+  "name": "notes",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "hjs": "0.0.4",
+    "less-middleware": "0.1.12",
+    "underscore": "1.4.4",
+    "mongoose": "3",
+    "sha1": "*"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.49"
+  }
+}

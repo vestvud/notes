@@ -1,0 +1,59 @@
+.admin-content {
+	font-size: 16px;
+	width: 800px;
+	border: solid 1px #999;
+	padding: 10px;
+	margin: auto;
+	background-color: #fff;
+	.content {
+		padding: 20px;
+		max-width: 900px;
+	}
+	hr {
+		margin: 10px 0 10px 0;
+		border-top: none;
+		border-bottom: dotted 1px #999;
+	}
+	.list-picture {
+		max-width: 70px;
+	}
+	.list-column {
+		width: 100%;
+		margin-bottom: 40px;
+		table {
+			width: 100%;
+			td {
+				border-bottom: solid 1px #999;
+				border-right: dotted 1px #999;
+				padding: 4px;
+			}
+		}
+		a {
+			color: #000;
+			&:hover {
+				color: #999;
+			}
+		}
+		.delete {
+    		color: red;
+		}
+	}
+	.form-column {
+		width: 100%;
+		input[type="text"] {
+			width: 100%;
+		}
+		textarea {
+			width: 100%;
+			height: 250px;
+		}
+	}
+	input[type="text"], select, textarea {
+		border: solid 1px #999;
+		background: none;
+		padding: 4px 6px;
+		border-radius: 4px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+	}
+}

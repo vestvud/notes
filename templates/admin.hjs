@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/jquery.cleditor.css" />
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>        
+       	<script src="js/ckeditor/ckeditor.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="admin-content">
+			<div>
+				<a href="/">на сайт</a>
+			</div>
+			<div class="ajax-result"></div>
+			<h1>{{content}}</h1>
+			<hr />
+			<div class="left list-column">
+				{{{list}}}
+			</div>
+			<div class="left form-column">
+				{{{form}}}
+			</div>
+			<br class="clear" />
+			<hr />
+		</div>
+	</body>
+	<script type="text/javascript">
+        $(document).ready(function() { 
+        	 CKEDITOR.replace( 'textID', {}); 
+        });            
+    </script>
+</html>
